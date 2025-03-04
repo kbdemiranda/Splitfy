@@ -1,0 +1,9 @@
+services:
+  postgres:
+    image: 'kbdemiranda/postgres:multiarch'
+    environment:
+      - 'POSTGRES_DB=Splitfy'
+      - 'POSTGRES_PASSWORD=postgres'
+      - 'POSTGRES_USER=postgres'
+    ports:
+      - '5422:5422'
